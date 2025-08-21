@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta lang="English, Français, Español">
+  <title>LBOS.com</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #0066cc;
+      display: flex;
+      justify-content: center;
+    }
+    nav button {
+      background: none;
+      border: none;
+      color: white;
+      padding: 15px 20px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    nav button:hover {
+      background-color: #005bb5;
+    }
+    section {
+      display: none;
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+    }
+    section.active {
+      display: block;
+    }
+    h2 {
+      color: #004080;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin: 10px 0;
+    }
+    a.download-link {
+      color: #004080;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.download-link:hover {
+      text-decoration: underline;
+    }
+    footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>LBOS.com</h1>
+    <p>Powered by LTech | YouTube: 
+      <a href="https://www.youtube.com/@LB65memesYT" target="_blank" style="color: #ffd700;">LB65memes</a>
+    </p>
+  </header>
+
+  <nav>
+    <button onclick="showSection('home')">Home</button>
+    <button onclick="showSection('download')">Download</button>
+    <button onclick="showSection('about')">About Us</button>
+  </nav>
+
+  <section id="home" class="active">
+    <h2>Home</h2>
+    <p>Welcome to LBOS.com — the official site for LBOS py1.0.1, a custom Python-based operating system with multilingual support. Whether you're a developer, a hobbyist, or just curious, LBOS offers a lightweight and creative OS experience.</p>
+  </section>
+
+  <section id="download">
+    <h2>Download LBOS</h2>
+    <ul>
+      <li>🇺🇸 <a href="osen.pyw" class="download-link" download="osen.pyw">LBOS (English) 10KO/80KB</a></li>
+      <li>🇫🇷 <a href="osfr.pyw" class="download-link" download="osfr.pyw">LBOS (Français) 10KO/80KB</a></li>
+      <li>🇪🇸 <a href="ossp.pyw" class="download-link" download="ossp.pyw">LBOS (Español) 10KO/80KB</a></li>
+    </ul>
+
+    <h3>Installation Guides</h3>
+    <ul>
+      <li>📄 <a href="info_en.html" class="download-link" download="info_en.html">Install Guide (English) 1KO/8KB</a></li>
+      <li>📄 <a href="info_fr.html" class="download-link" download="info_fr.html">Guide d'installation (Français) 1KO/8KB</a></li>
+      <li>📄 <a href="info_es.html" class="download-link" download="info_es.html">Guía de instalación (Español) 1KO/8KB</a></li>
+    </ul>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p><strong>LTech</strong> is a creative tech brand focused on building lightweight, Python-powered tools and experiences. LBOS is our flagship project — a minimalist operating system designed for simplicity, speed, and multilingual accessibility.</p>
+    <p><strong>LB65memes</strong> is our official YouTube channel where we share memes lol!</p>
+  </section>
+
+  <footer>
+    <p>© 2025 LBOS.com — All rights reserved</p>
+  </footer>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('section').forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
